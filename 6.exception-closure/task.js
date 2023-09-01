@@ -31,7 +31,7 @@ get perimeter(){
 get area() {
     const s = this.perimeter / 2;
     const areaSquared = s * (s - this.a) * (s - this.b) * (s - this.c);
-    return Math.sqrt(areaSquared).toFixed(3);
+    return +Math.sqrt(areaSquared).toFixed(3);
   }
 }
 function getTriangle(a, b, c) {
